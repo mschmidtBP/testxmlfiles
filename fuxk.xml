@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/css' href='https://gitlab.bigpoint.net/test-automation/VERITASXML/raw/inDev/veritas_xml.css'?>
+<VERITAS>
+<TEAM>No Team</TEAM>
+<AUTHOR>h.meyer@bigpoint.net</AUTHOR>
+<COMMENT>Mit neuem Fancy Layout :D</COMMENT>
+<URLS>
+  <URL>https://google.de/test</URL>
+  <URL>https://bigpoint.de/</URL>
+  <URL>https://test.com/</URL>
+  <URL>https://bigpoint.net/</URL>
+</URLS>
+<OPTIONS>
+  <OS>win7</OS>
+  <BROWSER>firefox</BROWSER>
+  <SELENIUMVERSION>newest</SELENIUMVERSION>
+  <VIDEO>1</VIDEO>
+  <SCREENSHOT>0</SCREENSHOT>
+</OPTIONS>
+<SELECTORS>
+  <SELECTOR> type="CSS">
+    <ID>1</ID>
+    <SELECTBY>#undefineda</SELECTBY>
+    <COMMENT>Test undefined</COMMENT>
+  </SELECTOR>
+  <SELECTOR> type="CSS">
+    <ID>6</ID>
+    <SELECTBY>#testclickAndWait</SELECTBY>
+    <COMMENT>Test clickAndWait</COMMENT>
+  </SELECTOR>
+  <SELECTOR> type="CSS">
+    <ID>3</ID>
+    <SELECTBY>#assda</SELECTBY>
+    <COMMENT>Test input</COMMENT>
+  </SELECTOR>
+  <SELECTOR> type="CSS">
+    <ID>4</ID>
+    <SELECTBY>#testselect</SELECTBY>
+    <COMMENT>Test select</COMMENT>
+  </SELECTOR>
+  <SELECTOR> type="CSS">
+    <ID>7</ID>
+    <SELECTBY>#testscreenshot</SELECTBY>
+    <COMMENT>Test screenshot</COMMENT>
+  </SELECTOR>
+  <SELECTOR> type="CSS">
+    <ID>10</ID>
+    <SELECTBY>[name="testselector"]</SELECTBY>
+    <COMMENT>Test Displayname</COMMENT>
+  </SELECTOR>
+</SELECTORS>
+<STEPS>
+  <STEP type="undefined">
+    <COMMENT></COMMENT>
+    <SELECTOR>1</SELECTOR>
+    <VALUE>Test undefined</VALUE>
+    <ONERROR>ignore</ONERROR>
+  </STEP>
+  <STEP type="openUrl">
+    <COMMENT>This is my little comment</COMMENT>
+    <SELECTOR>6</SELECTOR>
+    <VALUE>Test Open c&w</VALUE>
+    <ONERROR>ignore</ONERROR>
+  </STEP>
+  <STEP type="input">
+    <COMMENT></COMMENT>
+    <SELECTOR>3</SELECTOR>
+    <VALUE>Test input</VALUE>
+    <ONERROR>report</ONERROR>
+  </STEP>
+  <STEP type="select">
+    <COMMENT></COMMENT>
+    <SELECTOR>4</SELECTOR>
+    <VALUE>Test select</VALUE>
+    <ONERROR>ignore</ONERROR>
+  </STEP>
+  <STEP type="click">
+    <COMMENT></COMMENT>
+    <SELECTOR>3</SELECTOR>
+    <VALUE>Test click</VALUE>
+    <ONERROR>ignore</ONERROR>
+  </STEP>
+  <STEP type="clickAndWait">
+    <COMMENT></COMMENT>
+    <SELECTOR>6</SELECTOR>
+    <VALUE>Test clickAndWait</VALUE>
+    <ONERROR>report</ONERROR>
+  </STEP>
+  <SCREENSHOT name="Test screenshot"/>
+  <STEP type="select">
+    <COMMENT></COMMENT>
+    <SELECTOR>10</SELECTOR>
+    <VALUE>asdf</VALUE>
+    <ONERROR>ignore</ONERROR>
+  </STEP>
+</STEPS>
+</VERITAS>
